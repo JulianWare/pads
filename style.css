@@ -1,5 +1,5 @@
 html {touch-action: manipulation;user-select: none;}
-body {margin:0;background:#0000ff;overflow:hidden;}
+body {margin:0;background:#000;overflow:hidden;}
 #switches {height:calc(var(--vh, 1vh) * 6);width: 96vw;display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;grid-gap: calc(var(--vh, 1vh) * 2) 2vw;}
 #switches.top {padding: calc(var(--vh, 1vh) * 2) 2vw 0 2vw;}
 #switches.bottom {padding: 0 2vw calc(var(--vh, 1vh) * 2) 2vw;}
