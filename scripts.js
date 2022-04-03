@@ -21,6 +21,8 @@ function endTone1() {
     gainNode1.gain.cancelScheduledValues(audioCtx1.currentTime);
     gainNode1.gain.setValueAtTime(gainNode1.gain.value,audioCtx1.currentTime);
     gainNode1.gain.linearRampToValueAtTime(0.000001, audioCtx1.currentTime + 0.01);
+    oscillator1.stop();
+    gainNode1.disconnect(audioCtx1.destination);
 }
 
 let audioCtx2 = null;
@@ -44,6 +46,8 @@ function endTone2() {
     gainNode2.gain.cancelScheduledValues(audioCtx2.currentTime);
     gainNode2.gain.setValueAtTime(gainNode2.gain.value,audioCtx2.currentTime);
     gainNode2.gain.linearRampToValueAtTime(0.000001, audioCtx2.currentTime + 0.01);
+    oscillator2.stop();
+    gainNode2.disconnect(audioCtx2.destination);
 }
 
 let audioCtx3 = null;
@@ -375,7 +379,6 @@ let keys = [].slice.call(document.querySelectorAll('.pad'), 0);
 let keyboard = document.querySelector('#pads1');
 let touches = [];
 keyboard.addEventListener('touchstart', touchStart, false);
-keyboard.addEventListener('touchmove', touchMove, false);
 keyboard.addEventListener('touchend', touchEnd, false);
 function isKey(key) {
 	return keys.indexOf(key) >= 0;
@@ -473,20 +476,6 @@ function touchEnd(evt) {
         if (index >= 0) {
         	touches.splice(index, 1);
         }  
-    }
-    updateKeys();
-}
-function touchMove(evt) {
-    evt.preventDefault();
-    let changedTouches = evt.changedTouches;
-    for (let i = 0; i < changedTouches.length; i++) {
-    	let touch = changedTouches[i];
-        let index = getTouchIndex(touch.identifier);
-        if (index >= 0) {
-    	    let key = document.elementFromPoint(touch.pageX, touch.pageY);
-            if (isKey(key))
-            touches[index].key = key;
-        }      
     }
     updateKeys();
 }
