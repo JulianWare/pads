@@ -728,82 +728,82 @@ btn16.addEventListener('mouseup', (e16a) => {
 let down1 = false;let down2 = false;let down3 = false;let down4 = false;let down5 = false;let down6 = false;let down7 = false;let down8 = false;let down9 = false;let down10 = false;let down11 = false;let down12 = false;let down13 = false;let down14 = false;let down15 = false;let down16 = false;
 
 document.addEventListener('keydown', function(event) {
-    if (event.keyCode === 49) {
+    if (event.key === '1') {
         if (down1) {return};
         down1 = true;
         startTone1(185);
         btn1.classList.add('active-red');
-    } else if (event.keyCode === 50) {
+    } else if (event.key === '2') {
         if (down2) {return};
         down2 = true;
         startTone2(196);
         btn2.classList.add('active-blue');
-    } else if (event.keyCode === 51) {
+    } else if (event.key === '3') {
         if (down3) {return};
         down3 = true;
         startTone3(207.65);
         btn3.classList.add('active-green');
-    } else if (event.keyCode === 52) {
+    } else if (event.key === '4') {
         if (down4) {return};
         down4 = true;
         startTone4(220.00);
         btn4.classList.add('active-purple');
-    } else if (event.keyCode === 81) {
+    } else if (event.key === 'q') {
         if (down5) {return};
         down5 = true;
         startTone5(233.08);
         btn5.classList.add('active-red');
-    } else if (event.keyCode === 87) {
+    } else if (event.key === 'w') {
         if (down6) {return};
         down6 = true;
         startTone6(246.94);
         btn6.classList.add('active-blue');
-    } else if (event.keyCode === 69) {
+    } else if (event.key === 'e') {
         if (down7) {return};
         down7 = true;
         startTone7(261.63);
         btn7.classList.add('active-green');
-    } else if (event.keyCode === 82) {
+    } else if (event.key === 'r') {
         if (down8) {return};
         down8 = true;
         startTone8(277.18);
         btn8.classList.add('active-purple');
-    } else if (event.keyCode === 65) {
+    } else if (event.key === 'a') {
         if (down9) {return};
         down9 = true;
         startTone9(293.66);
         btn9.classList.add('active-red');
-    } else if (event.keyCode === 83) {
+    } else if (event.key === 's') {
         if (down10) {return};
         down10 = true;
         startTone10(311.13);
         btn10.classList.add('active-blue');
-    } else if (event.keyCode === 68) {
+    } else if (event.key === 'd') {
         if (down11) {return};
         down11 = true;
         startTone11(329.63);
         btn11.classList.add('active-green');
-    } else if (event.keyCode === 70) {
+    } else if (event.key === 'f') {
         if (down12) {return};
         down12 = true;
         startTone12(349.23);
         btn12.classList.add('active-purple');
-    } else if (event.keyCode === 90) {
+    } else if (event.key === 'z') {
         if (down13) {return};
         down13 = true;
         startTone13(369.99);
         btn13.classList.add('active-red');
-    } else if (event.keyCode === 88) {
+    } else if (event.key === 'x') {
         if (down14) {return};
         down14 = true;
         startTone14(392);
         btn14.classList.add('active-blue');
-    } else if (event.keyCode === 67) {
+    } else if (event.key === 'c') {
         if (down15) {return};
         down15 = true;
         startTone15(415.30);
         btn15.classList.add('active-green');
-    } else if (event.keyCode === 86) {
+    } else if (event.key === 'v') {
         if (down16) {return};
         down16 = true;
         startTone16(440);
@@ -814,67 +814,67 @@ document.addEventListener('keydown', function(event) {
 }, false);
 
 document.addEventListener('keyup', function(eventEnd) {
-    if (event.keyCode === 49) {
+    if (eventEnd.key === 49) {
         down1 = false;
         endTone1();
         btn1.classList.remove('active-red');
-    } else if (event.keyCode === 50) {
+    } else if (eventEnd.key === 50) {
         down2 = false;
         endTone2();
         btn2.classList.remove('active-blue');
-    } else if (event.keyCode === 51) {
+    } else if (eventEnd.key === 51) {
         down3 = false;
         endTone3();
         btn3.classList.remove('active-green');
-    } else if (event.keyCode === 52) {
+    } else if (eventEnd.key === 52) {
         down4 = false;
         endTone4();
         btn4.classList.remove('active-purple');
-    } else if (event.keyCode === 81) {
+    } else if (eventEnd.key === 81) {
         down5 = false;
         endTone5();
         btn5.classList.remove('active-red');
-    } else if (event.keyCode === 87) {
+    } else if (eventEnd.key === 87) {
         down6 = false;
         endTone6();
         btn6.classList.remove('active-blue');
-    } else if (event.keyCode === 69) {
+    } else if (eventEnd.key === 69) {
         down7 = false;
         endTone7();
         btn7.classList.remove('active-green');
-    } else if (event.keyCode === 82) {
+    } else if (eventEnd.key === 82) {
         down8 = false;
         endTone8();
         btn8.classList.remove('active-purple');
-    } else if (event.keyCode === 65) {
+    } else if (eventEnd.key === 65) {
         down9 = false;
         endTone9();
         btn9.classList.remove('active-red');
-    } else if (event.keyCode === 83) {
+    } else if (eventEnd.key === 83) {
         down10 = false;
         endTone10();
         btn10.classList.remove('active-blue');
-    } else if (event.keyCode === 68) {
+    } else if (eventEnd.key === 68) {
         down11 = false;
         endTone11();
         btn11.classList.remove('active-green');
-    } else if (event.keyCode === 70) {
+    } else if (eventEnd.key === 70) {
         down12 = false;
         endTone12();
         btn12.classList.remove('active-purple');
-    } else if (event.keyCode === 90) {
+    } else if (eventEnd.key === 90) {
         down13 = false;
         endTone13();
         btn13.classList.remove('active-red');
-    } else if (event.keyCode === 88) {
+    } else if (eventEnd.key === 88) {
         down14 = false;
         endTone14();
         btn14.classList.remove('active-blue');
-    } else if (event.keyCode === 67) {
+    } else if (eventEnd.key === 67) {
         down15 = false;
         endTone15();
         btn15.classList.remove('active-green');
-    } else if (event.keyCode === 86) {
+    } else if (eventEnd.key === 86) {
         down16 = false;
         endTone16();
         btn16.classList.remove('active-purple');
