@@ -71,6 +71,8 @@ function endTone3() {
     gainNode3.gain.cancelScheduledValues(audioCtx3.currentTime);
     gainNode3.gain.setValueAtTime(gainNode3.gain.value,audioCtx3.currentTime);
     gainNode3.gain.linearRampToValueAtTime(0.000001, audioCtx3.currentTime + 0.01);
+    oscillator3.stop();
+    gainNode3.disconnect(audioCtx3.destination);
 }
 
 let audioCtx4 = null;
@@ -94,6 +96,8 @@ function endTone4() {
     gainNode4.gain.cancelScheduledValues(audioCtx4.currentTime);
     gainNode4.gain.setValueAtTime(gainNode4.gain.value,audioCtx4.currentTime);
     gainNode4.gain.linearRampToValueAtTime(0.000001, audioCtx4.currentTime + 0.01);
+    oscillator4.stop();
+    gainNode4.disconnect(audioCtx4.destination);
 }
 
 let audioCtx5 = null;
@@ -117,6 +121,8 @@ function endTone5() {
     gainNode5.gain.cancelScheduledValues(audioCtx5.currentTime);
     gainNode5.gain.setValueAtTime(gainNode5.gain.value,audioCtx5.currentTime);
     gainNode5.gain.linearRampToValueAtTime(0.000001, audioCtx5.currentTime + 0.01);
+    oscillator5.stop();
+    gainNode5.disconnect(audioCtx5.destination);
 }
 
 let audioCtx6 = null;
@@ -140,6 +146,8 @@ function endTone6() {
     gainNode6.gain.cancelScheduledValues(audioCtx6.currentTime);
     gainNode6.gain.setValueAtTime(gainNode6.gain.value,audioCtx6.currentTime);
     gainNode6.gain.linearRampToValueAtTime(0.000001, audioCtx6.currentTime + 0.01);
+    oscillator6.stop();
+    gainNode6.disconnect(audioCtx6.destination);
 }
 
 let audioCtx7 = null;
@@ -163,6 +171,8 @@ function endTone7() {
     gainNode7.gain.cancelScheduledValues(audioCtx7.currentTime);
     gainNode7.gain.setValueAtTime(gainNode7.gain.value,audioCtx7.currentTime);
     gainNode7.gain.linearRampToValueAtTime(0.000001, audioCtx7.currentTime + 0.01);
+    oscillator7.stop();
+    gainNode7.disconnect(audioCtx7.destination);
 }
 
 let audioCtx8 = null;
@@ -186,6 +196,8 @@ function endTone8() {
     gainNode8.gain.cancelScheduledValues(audioCtx8.currentTime);
     gainNode8.gain.setValueAtTime(gainNode8.gain.value,audioCtx8.currentTime);
     gainNode8.gain.linearRampToValueAtTime(0.000001, audioCtx8.currentTime + 0.01);
+    oscillator8.stop();
+    gainNode8.disconnect(audioCtx8.destination);
 }
 
 let audioCtx9 = null;
@@ -209,6 +221,8 @@ function endTone9() {
     gainNode9.gain.cancelScheduledValues(audioCtx9.currentTime);
     gainNode9.gain.setValueAtTime(gainNode9.gain.value,audioCtx9.currentTime);
     gainNode9.gain.linearRampToValueAtTime(0.000001, audioCtx9.currentTime + 0.01);
+    oscillator9.stop();
+    gainNode9.disconnect(audioCtx9.destination);
 }
 
 let audioCtx10 = null;
@@ -232,6 +246,8 @@ function endTone10() {
     gainNode10.gain.cancelScheduledValues(audioCtx10.currentTime);
     gainNode10.gain.setValueAtTime(gainNode10.gain.value,audioCtx10.currentTime);
     gainNode10.gain.linearRampToValueAtTime(0.000001, audioCtx10.currentTime + 0.01);
+    oscillator10.stop();
+    gainNode10.disconnect(audioCtx10.destination);
 }
 
 let audioCtx11 = null;
@@ -255,6 +271,8 @@ function endTone11() {
     gainNode11.gain.cancelScheduledValues(audioCtx11.currentTime);
     gainNode11.gain.setValueAtTime(gainNode11.gain.value,audioCtx11.currentTime);
     gainNode11.gain.linearRampToValueAtTime(0.000001, audioCtx11.currentTime + 0.01);
+    oscillator11.stop();
+    gainNode11.disconnect(audioCtx11.destination);
 }
 
 let audioCtx12 = null;
@@ -278,6 +296,8 @@ function endTone12() {
     gainNode12.gain.cancelScheduledValues(audioCtx12.currentTime);
     gainNode12.gain.setValueAtTime(gainNode12.gain.value,audioCtx12.currentTime);
     gainNode12.gain.linearRampToValueAtTime(0.000001, audioCtx12.currentTime + 0.01);
+    oscillator12.stop();
+    gainNode12.disconnect(audioCtx12.destination);
 }
 
 let audioCtx13 = null;
@@ -301,6 +321,8 @@ function endTone13() {
     gainNode13.gain.cancelScheduledValues(audioCtx13.currentTime);
     gainNode13.gain.setValueAtTime(gainNode13.gain.value,audioCtx13.currentTime);
     gainNode13.gain.linearRampToValueAtTime(0.000001, audioCtx13.currentTime + 0.01);
+    oscillator13.stop();
+    gainNode13.disconnect(audioCtx13.destination);
 }
 
 let audioCtx14 = null;
@@ -324,6 +346,8 @@ function endTone14() {
     gainNode14.gain.cancelScheduledValues(audioCtx14.currentTime);
     gainNode14.gain.setValueAtTime(gainNode14.gain.value,audioCtx14.currentTime);
     gainNode14.gain.linearRampToValueAtTime(0.000001, audioCtx14.currentTime + 0.01);
+    oscillator14.stop();
+    gainNode14.disconnect(audioCtx14.destination);
 }
 
 let audioCtx15 = null;
@@ -347,6 +371,8 @@ function endTone15() {
     gainNode15.gain.cancelScheduledValues(audioCtx15.currentTime);
     gainNode15.gain.setValueAtTime(gainNode15.gain.value,audioCtx15.currentTime);
     gainNode15.gain.linearRampToValueAtTime(0.000001, audioCtx15.currentTime + 0.01);
+    oscillator15.stop();
+    gainNode15.disconnect(audioCtx15.destination);
 }
 
 let audioCtx16 = null;
@@ -370,6 +396,8 @@ function endTone16() {
     gainNode16.gain.cancelScheduledValues(audioCtx16.currentTime);
     gainNode16.gain.setValueAtTime(gainNode16.gain.value,audioCtx16.currentTime);
     gainNode16.gain.linearRampToValueAtTime(0.000001, audioCtx16.currentTime + 0.01);
+    oscillator16.stop();
+    gainNode16.disconnect(audioCtx16.destination);
 }
 
 
@@ -431,20 +459,16 @@ function isKey15(key) {
 function isKey16(key) {
 	return keys.indexOf(key) === 15;
 }
-
+/*
 function updateKeys() {
 	keys.forEach(function(key) {
-        if (isKey1(key)) {
-            if (key.classList.contains('test')) {
-                endTone1();
-                key.classList.remove('test');
-            }
+        if (isKey1(key) && key.classList.contains('test')) {
+            endTone1();
+            key.classList.remove('test');
         }
-        if (isKey2(key)) {
-            if (key.classList.contains('test2')) {
-                endTone2();
-                key.classList.remove('test2');
-            }
+        if (isKey2(key) && key.classList.contains('test2')) {
+            endTone2();
+            key.classList.remove('test2');
         }
     });
 	touches.forEach(function(touch) {
@@ -456,6 +480,19 @@ function updateKeys() {
             touch.key.classList.add('test2');
             startTone2(196);
         }
+    });
+}
+*/
+function updateKeys() {
+	keys.forEach(function(key) {
+        if (key.classList.contains('test')) {
+            endTone1();
+            key.classList.remove('test');
+        }
+    });
+	touches.forEach(function(touch) {
+        touch.key.classList.add('test');
+        startTone1(185); 
     });
 }
 
