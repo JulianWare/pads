@@ -459,7 +459,7 @@ function isKey15(key) {
 function isKey16(key) {
 	return keys.indexOf(key) === 15;
 }
-/*
+
 function updateKeys() {
 	keys.forEach(function(key) {
         if (isKey1(key) && key.classList.contains('test')) {
@@ -468,7 +468,7 @@ function updateKeys() {
         }
         if (isKey2(key) && key.classList.contains('test2')) {
             endTone2();
-            key.classList.remove('test2');
+            gikey.classList.remove('test2');
         }
     });
 	touches.forEach(function(touch) {
@@ -480,19 +480,6 @@ function updateKeys() {
             touch.key.classList.add('test2');
             startTone2(196);
         }
-    });
-}
-*/
-function updateKeys() {
-	keys.forEach(function(key) {
-        if (key.classList.contains('test')) {
-            endTone1();
-            key.classList.remove('test');
-        }
-    });
-	touches.forEach(function(touch) {
-        touch.key.classList.add('test');
-        startTone1(185); 
     });
 }
 
