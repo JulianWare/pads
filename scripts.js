@@ -814,67 +814,67 @@ document.addEventListener('keydown', function(event) {
 }, false);
 
 document.addEventListener('keyup', function(eventEnd) {
-    if (eventEnd.key === 49) {
+    if (eventEnd.key === '1') {
         down1 = false;
         endTone1();
         btn1.classList.remove('active-red');
-    } else if (eventEnd.key === 50) {
+    } else if (eventEnd.key === '2') {
         down2 = false;
         endTone2();
         btn2.classList.remove('active-blue');
-    } else if (eventEnd.key === 51) {
+    } else if (eventEnd.key === '3') {
         down3 = false;
         endTone3();
         btn3.classList.remove('active-green');
-    } else if (eventEnd.key === 52) {
+    } else if (eventEnd.key === '4') {
         down4 = false;
         endTone4();
         btn4.classList.remove('active-purple');
-    } else if (eventEnd.key === 81) {
+    } else if (eventEnd.key === 'q') {
         down5 = false;
         endTone5();
         btn5.classList.remove('active-red');
-    } else if (eventEnd.key === 87) {
+    } else if (eventEnd.key === 'w') {
         down6 = false;
         endTone6();
         btn6.classList.remove('active-blue');
-    } else if (eventEnd.key === 69) {
+    } else if (eventEnd.key === 'e') {
         down7 = false;
         endTone7();
         btn7.classList.remove('active-green');
-    } else if (eventEnd.key === 82) {
+    } else if (eventEnd.key === 'r') {
         down8 = false;
         endTone8();
         btn8.classList.remove('active-purple');
-    } else if (eventEnd.key === 65) {
+    } else if (eventEnd.key === 'a') {
         down9 = false;
         endTone9();
         btn9.classList.remove('active-red');
-    } else if (eventEnd.key === 83) {
+    } else if (eventEnd.key === 's') {
         down10 = false;
         endTone10();
         btn10.classList.remove('active-blue');
-    } else if (eventEnd.key === 68) {
+    } else if (eventEnd.key === 'd') {
         down11 = false;
         endTone11();
         btn11.classList.remove('active-green');
-    } else if (eventEnd.key === 70) {
+    } else if (eventEnd.key === 'f') {
         down12 = false;
         endTone12();
         btn12.classList.remove('active-purple');
-    } else if (eventEnd.key === 90) {
+    } else if (eventEnd.key === 'z') {
         down13 = false;
         endTone13();
         btn13.classList.remove('active-red');
-    } else if (eventEnd.key === 88) {
+    } else if (eventEnd.key === 'x') {
         down14 = false;
         endTone14();
         btn14.classList.remove('active-blue');
-    } else if (eventEnd.key === 67) {
+    } else if (eventEnd.key === 'c') {
         down15 = false;
         endTone15();
         btn15.classList.remove('active-green');
-    } else if (eventEnd.key === 86) {
+    } else if (eventEnd.key === 'v') {
         down16 = false;
         endTone16();
         btn16.classList.remove('active-purple');
