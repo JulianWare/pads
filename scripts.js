@@ -468,7 +468,7 @@ function updateKeys() {
         }
         if (isKey2(key) && key.classList.contains('test2')) {
             endTone2();
-            gikey.classList.remove('test2');
+            key.classList.remove('test2');
         }
     });
 	touches.forEach(function(touch) {
